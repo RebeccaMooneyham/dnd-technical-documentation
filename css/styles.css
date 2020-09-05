@@ -1,0 +1,82 @@
+/* -- General Styles -- */
+body {
+	font-family: 'Overpass', sans-serif;
+}
+
+h1 {
+	color: #181818;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.italic-bold {
+	font-style: italic;
+	font-weight: 800;
+}
+
+.wrap {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+/* -- Nav Styles -- */
+.nav .nav-link {
+	padding-left: 0;
+}
+
+.nav a {
+	color: #505050;
+	font-weight: 800;
+	font-size: 1.5rem;
+}
+
+.nav a:hover {
+	color: #e6010c;
+}
+
+/* -- Section Styles -- */
+h2 {
+	font-weight: 800;
+	font-size: 1.5em;
+}
+
+#main-doc {
+	padding: 20px 10px;
+}
+
+.main-section {
+	padding-bottom: 20px;
+}
+
+/* -- Media Queries -- */
+@media only screen and (min-width: 641px) {
+	.wrap {
+		flex-direction: row;
+		max-width: 1200px;
+		margin: auto;
+	}
+
+	#navbar {
+		padding: 20px;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	.nav li {
+		border-bottom: 1px solid #e6010c;
+	}
+
+	.nav li:last-child {
+		border: none;
+	}
+
+	.nav a {
+		font-weight: 400;
+		font-size: 1.25em;
+	}
+}
